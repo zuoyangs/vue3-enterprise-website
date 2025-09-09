@@ -109,7 +109,7 @@
               网站地图
             </a>
             <span class="text-gray-400">
-              ICP备案号：京ICP备2023000000号
+              ICP备案号：沪ICP备2023037106号-1
             </span>
           </div>
         </div>
@@ -178,7 +178,7 @@ const socialLinks: SocialMediaLink[] = [
 const contactInfo: ContactInfo = {
   address: '北京市朝阳区建国门外大街1号',
   phone: '400-123-4567',
-  email: 'info@company.com',
+  email: 'support@zuoyangs.com',
   workingHours: '周一至周五 9:00-18:00',
   website: 'https://www.company.com',
   socialMedia: socialLinks

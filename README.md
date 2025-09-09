@@ -7,6 +7,26 @@
 
 一个基于 Vue 3 + TypeScript + Tailwind CSS 构建的现代化企业官网模板，包含完整的企业网站功能模块，适合快速开发和部署企业官方网站。
 
+## 🖼️ 界面预览
+
+### 首页
+![首页](./首页.png)
+
+### 关于我们
+![关于我们](./关于我们.png)
+
+### 核心业务
+![核心业务](./核心业务.png)
+
+### 新闻动态
+![新闻动态](./新闻动态.png)
+
+### 在线咨询
+![在线咨询](./在线咨询.png)
+
+### 联系我们
+![联系我们](./联系我们.png)
+
 ## ✨ 特性
 
 - 🚀 **现代化技术栈**：Vue 3 + TypeScript + Vite + Tailwind CSS
@@ -66,7 +86,7 @@ npm install
 npm run dev
 ```
 
-访问 [http://localhost:5173](http://localhost:5173) 查看项目。
+访问 [http://localhost:8080](http://localhost:8080) 查看项目。
 
 ### 生产构建
 
@@ -131,10 +151,6 @@ src/
 3. 提交更改 (`git commit -m 'Add some AmazingFeature'`)
 4. 推送到分支 (`git push origin feature/AmazingFeature`)
 5. 打开 Pull Request
-
-## 📝 许可证
-
-本项目采用 MIT 许可证 - 查看 [LICENSE](LICENSE) 文件了解详情。
 
 ## 🙏 致谢
 

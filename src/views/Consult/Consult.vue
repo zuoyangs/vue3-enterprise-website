@@ -95,7 +95,7 @@
                   <span class="text-blue-600 text-xl">📧</span>
                   <div>
                     <span class="font-medium">邮箱咨询：</span>
-                    <a href="mailto:support@company.com" class="text-blue-600 hover:text-blue-800">support@company.com</a>
+                    <a href="mailto:support@zuoyangs.com" class="text-blue-600 hover:text-blue-800">support@zuoyangs.com</a>
                   </div>
                 </div>
               </div>
