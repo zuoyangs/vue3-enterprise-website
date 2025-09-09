@@ -57,8 +57,6 @@ cd vue3-enterprise-website
 
 # 安装依赖
 npm install
-# 或
-yarn install
 ```
 
 ### 开发模式
