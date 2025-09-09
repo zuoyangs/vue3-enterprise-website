@@ -10,22 +10,22 @@
 ## 🖼️ 界面预览
 
 ### 首页
-![首页](./首页.png)
+<img src="./首页.png" alt="首页" style="border: 1px solid #ccc; border-radius: 4px; max-width: 100%; height: auto;">
 
 ### 关于我们
-![关于我们](./关于我们.png)
+<img src="./关于我们.png" alt="关于我们" style="border: 1px solid #ccc; border-radius: 4px; max-width: 100%; height: auto;">
 
 ### 核心业务
-![核心业务](./核心业务.png)
+<img src="./核心业务.png" alt="核心业务" style="border: 1px solid #ccc; border-radius: 4px; max-width: 100%; height: auto;">
 
 ### 新闻动态
-![新闻动态](./新闻动态.png)
+<img src="./新闻动态.png" alt="新闻动态" style="border: 1px solid #ccc; border-radius: 4px; max-width: 100%; height: auto;">
 
 ### 在线咨询
-![在线咨询](./在线咨询.png)
+<img src="./在线咨询.png" alt="在线咨询" style="border: 1px solid #ccc; border-radius: 4px; max-width: 100%; height: auto;">
 
 ### 联系我们
-![联系我们](./联系我们.png)
+<img src="./联系我们.png" alt="联系我们" style="border: 1px solid #ccc; border-radius: 4px; max-width: 100%; height: auto;">
 
 ## ✨ 特性
 
@@ -161,3 +161,4 @@ src/
 ---
 
 ⭐ 如果这个项目对您有帮助，请给它一个星标！
+
