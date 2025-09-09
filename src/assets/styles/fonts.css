@@ -1,0 +1,105 @@
+/* 字体加载和全局字体设置 */
+
+/* 确保中文字体优先加载和显示 */
+@font-face {
+  font-family: 'ChineseFont';
+  src: local('Microsoft YaHei'), local('PingFang SC'), local('Hiragino Sans GB'), local('STHeiti');
+  font-display: swap; /* 确保字体快速显示 */
+}
+
+/* 全局字体设置 - 最高优先级 */
+* {
+  font-family: 'Microsoft YaHei', 'PingFang SC', 'Hiragino Sans GB', 'STHeiti', 'Helvetica Neue', Arial, sans-serif !important;
+}
+
+html, body {
+  font-family: 'Microsoft YaHei', 'PingFang SC', 'Hiragino Sans GB', 'STHeiti', 'Helvetica Neue', Arial, sans-serif !important;
+}
+
+/* 确保所有常用元素都使用中文字体 */
+h1, h2, h3, h4, h5, h6,
+p, span, a, button, input, textarea, select, label,
+.nav-link, .btn, .card, .text-base, .text-sm, .text-lg, .text-xl {
+  font-family: 'Microsoft YaHei', 'PingFang SC', 'Hiragino Sans GB', 'STHeiti', 'Helvetica Neue', Arial, sans-serif !important;
+}
+
+/* 特别针对导航菜单的字体设置 */
+nav, nav *, .navbar *, .navbar-logo * {
+  font-family: 'Microsoft YaHei', 'PingFang SC', 'Hiragino Sans GB', 'STHeiti', 'Helvetica Neue', Arial, sans-serif !important;
+}
+
+/* 特别针对页脚组件的字体设置 */
+footer, footer *, footer a, footer span, footer p, footer h1, footer h2, footer h3, footer h4, footer h5, footer h6 {
+  font-family: 'Microsoft YaHei', 'PingFang SC', 'Hiragino Sans GB', 'STHeiti', 'Helvetica Neue', Arial, sans-serif !important;
+  font-display: swap !important;
+}
+
+/* Tailwind CSS 类的字体覆盖 */
+.font-sans, .font-medium, .font-bold, .font-semibold {
+  font-family: 'Microsoft YaHei', 'PingFang SC', 'Hiragino Sans GB', 'STHeiti', 'Helvetica Neue', Arial, sans-serif !important;
+}
+
+/* 特别针对 Business 页面的字体设置 */
+.business-page, .business-page * {
+  font-family: 'Microsoft YaHei', 'PingFang SC', 'Hiragino Sans GB', 'STHeiti', 'Helvetica Neue', Arial, sans-serif !important;
+  font-display: swap !important;
+}
+
+/* CTA 区域字体强制设置 */
+.bg-gradient-primary, .bg-gradient-primary *,
+.bg-gradient-primary h1, .bg-gradient-primary h2, .bg-gradient-primary h3,
+.bg-gradient-primary p, .bg-gradient-primary span, .bg-gradient-primary a,
+.bg-gradient-primary button, .bg-gradient-primary .btn {
+  font-family: 'Microsoft YaHei', 'PingFang SC', 'Hiragino Sans GB', 'STHeiti', 'Helvetica Neue', Arial, sans-serif !important;
+  font-display: swap !important;
+}
+
+/* 确保所有按钮和链接的字体 */
+.btn, button, a.btn, router-link {
+  font-family: 'Microsoft YaHei', 'PingFang SC', 'Hiragino Sans GB', 'STHeiti', 'Helvetica Neue', Arial, sans-serif !important;
+}
+
+/* 服务卡片字体设置 */
+.service-card, .service-card *,
+.card, .card *, .card-body, .card-body * {
+  font-family: 'Microsoft YaHei', 'PingFang SC', 'Hiragino Sans GB', 'STHeiti', 'Helvetica Neue', Arial, sans-serif !important;
+}
+
+/* 特别针对 router-link 和 Vue 路由链接的字体设置 */
+router-link, a[data-v-e345e995], button[data-v-e345e995] {
+  font-family: 'Microsoft YaHei', 'PingFang SC', 'Hiragino Sans GB', 'STHeiti', 'Helvetica Neue', Arial, sans-serif !important;
+  font-display: swap !important;
+}
+
+/* 超高优先级：针对所有可能的按钮选择器 */
+a.btn, a.btn *, 
+button.btn, button.btn *,
+.btn-outline, .btn-outline *,
+.border-white, .border-white *,
+.text-white, .text-white *,
+[class*="btn"], [class*="btn"] * {
+  font-family: 'Microsoft YaHei' !important;
+  font-display: swap !important;
+}
+
+/* Vue 组件特殊处理：使用属性选择器 */
+[data-v-e345e995], [data-v-e345e995] *,
+[data-v-e345e995] a, [data-v-e345e995] .btn {
+  font-family: 'Microsoft YaHei', 'PingFang SC', 'Hiragino Sans GB', 'STHeiti', 'Helvetica Neue', Arial, sans-serif !important;
+  font-display: swap !important;
+}
+
+/* 最高优先级：针对多层 class 组合选择器 */
+.btn-outline.border-white.text-white,
+.btn.btn-outline.border-white.text-white,
+a.btn.btn-outline.border-white.text-white {
+  font-family: 'Microsoft YaHei' !important;
+  font-display: block !important;
+}
+
+/* CTA 区域强制设置 */
+.bg-gradient-primary .btn-outline.border-white.text-white,
+.bg-gradient-primary a.btn-outline.border-white.text-white {
+  font-family: 'Microsoft YaHei' !important;
+  font-display: block !important;
+}

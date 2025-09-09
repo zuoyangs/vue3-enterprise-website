@@ -1,0 +1,166 @@
+/* stylelint-disable at-rule-no-unknown */
+/* Tailwind CSS 基础样式 */
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+/* stylelint-enable at-rule-no-unknown */
+
+/* 全局中文字体设置 - 最高优先级 */
+@layer base {
+  * {
+    font-family: 'Microsoft YaHei', 'PingFang SC', 'Hiragino Sans GB', 'STHeiti', 'Helvetica Neue', Arial, sans-serif !important;
+  }
+  
+  html {
+    font-family: 'Microsoft YaHei', 'PingFang SC', 'Hiragino Sans GB', 'STHeiti', 'Helvetica Neue', Arial, sans-serif !important;
+  }
+  
+  body {
+    font-family: 'Microsoft YaHei', 'PingFang SC', 'Hiragino Sans GB', 'STHeiti', 'Helvetica Neue', Arial, sans-serif !important;
+  }
+}
+
+/* 自定义 Tailwind 组件类 */
+@layer components {
+  /* 容器样式 */
+  .container {
+    @apply max-w-7xl mx-auto px-4 sm:px-6 lg:px-8;
+  }
+  
+  /* 按钮样式 */
+  .btn {
+    @apply inline-flex items-center justify-center px-4 py-2 border border-transparent text-sm font-medium rounded-md transition-colors duration-200 focus:outline-none focus:ring-2 focus:ring-offset-2;
+  }
+  
+  .btn-primary {
+    @apply bg-blue-600 text-white hover:bg-blue-700 focus:ring-blue-500;
+  }
+  
+  .btn-secondary {
+    @apply bg-gray-600 text-white hover:bg-gray-700 focus:ring-gray-500;
+  }
+  
+  .btn-outline {
+    @apply border-gray-300 text-gray-700 bg-white hover:bg-gray-50 focus:ring-blue-500;
+  }
+  
+  /* 表单输入框样式 */
+  .form-input {
+    @apply w-full px-3 py-2 border border-gray-300 rounded-md shadow-sm placeholder-gray-400 focus:outline-none focus:ring-blue-500 focus:border-blue-500;
+  }
+  
+  .form-textarea {
+    @apply form-input resize-none;
+  }
+  
+  .form-select {
+    @apply form-input pr-10;
+  }
+  
+  /* 卡片样式 */
+  .card {
+    @apply bg-white rounded-lg shadow-md border border-gray-200;
+  }
+  
+  .card-header {
+    @apply px-6 py-4 border-b border-gray-200;
+  }
+  
+  .card-body {
+    @apply px-6 py-4;
+  }
+  
+  .card-footer {
+    @apply px-6 py-4 border-t border-gray-200;
+  }
+  
+  /* 导航链接样式 */
+  .nav-link {
+    @apply text-gray-700 hover:text-blue-600 font-medium transition-colors duration-200;
+  }
+  
+  .nav-link-active {
+    @apply text-blue-600 border-b-2 border-blue-600;
+  }
+  
+  /* 标签样式 */
+  .tag {
+    @apply inline-block px-2 py-1 text-xs font-semibold rounded-full;
+  }
+  
+  .tag-primary {
+    @apply bg-blue-100 text-blue-800;
+  }
+  
+  .tag-secondary {
+    @apply bg-gray-100 text-gray-800;
+  }
+  
+  .tag-success {
+    @apply bg-green-100 text-green-800;
+  }
+  
+  /* 分割线样式 */
+  .divider {
+    @apply border-t border-gray-200 my-6;
+  }
+  
+  /* 页面标题样式 */
+  .page-title {
+    @apply text-3xl font-bold text-gray-900 mb-6;
+  }
+  
+  .section-title {
+    @apply text-2xl font-semibold text-gray-800 mb-4;
+  }
+  
+  /* 响应式网格 */
+  .grid-responsive {
+    @apply grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6;
+  }
+  
+  /* 加载动画 */
+  .loading {
+    @apply animate-pulse;
+  }
+  
+  .loading-spinner {
+    @apply animate-spin;
+  }
+}
+
+/* 自定义工具类 */
+@layer utilities {
+  /* 文本截断 */
+  .text-ellipsis {
+    @apply truncate;
+  }
+  
+  .text-ellipsis-2 {
+    display: -webkit-box;
+    -webkit-line-clamp: 2;
+    -webkit-box-orient: vertical;
+    overflow: hidden;
+  }
+  
+  .text-ellipsis-3 {
+    display: -webkit-box;
+    -webkit-line-clamp: 3;
+    -webkit-box-orient: vertical;
+    overflow: hidden;
+  }
+  
+  /* 图片对象适应 */
+  .object-cover-center {
+    @apply object-cover object-center;
+  }
+  
+  /* 渐变背景 */
+  .bg-gradient-primary {
+    background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+  }
+  
+  .bg-gradient-secondary {
+    background: linear-gradient(135deg, #f093fb 0%, #f5576c 100%);
+  }
+}
